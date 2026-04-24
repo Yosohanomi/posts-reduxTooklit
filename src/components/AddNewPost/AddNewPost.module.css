@@ -1,0 +1,78 @@
+.container {
+    background: #fffafc;
+    border-radius: 25px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 1px solid #ffe0e8;
+}
+
+.title {
+    color: #ff8da1;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.title::before {
+    content: "ღ ";
+    color: #a8d8ff;
+}
+
+.title::after {
+    content: " ღ";
+    color: #a8d8ff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input {
+    padding: 12px 18px;
+    border: 1px solid #ffe0e8;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    outline: none;
+    background: #ffffff;
+    color: #8b9dc3;
+    font-weight: 300;
+}
+
+.input:focus {
+    border-color: #ffb6c7;
+    box-shadow: 0 0 0 3px rgba(255, 182, 193, 0.1);
+}
+
+.input::placeholder {
+    color: #d4c5d0;
+    font-weight: 300;
+}
+
+.addButton {
+    background: #a8d8ff;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.addButton:hover {
+    background: #8fcbff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(168, 216, 255, 0.3);
+}
+
+.addButton:active {
+    transform: translateY(0);
+}
