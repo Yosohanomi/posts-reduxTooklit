@@ -7,6 +7,7 @@ function AddNewPost() {
     const [title, setTitle] = useState("")
     const [text, setText] = useState("")
     const dispatcher = useDispatch()
+    const [isEdit, setIsEdit] = useState(false)
     
     const handleChangeTitle = (e) => {
         setTitle(e.target.value)
@@ -53,7 +54,7 @@ function AddNewPost() {
                     className={styles.addButton} 
                     type="button"
                 >
-                     Add Post
+                    {isEdit? "Edit post" : "Add post"}
                 </button>
             </form>
         </div>
